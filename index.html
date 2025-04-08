@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Botlist Minimalista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>BotHub</h1>
+        <p>Descubra e adicione bots incríveis para o seu servidor Discord.</p>
+    </header>
+
+    <main>
+        <section id="add-bot">
+            <h2>Adicionar um Bot</h2>
+            <form id="add-bot-form">
+                <div class="input-group">
+                    <label for="bot-name">Nome do Bot:</label>
+                    <input type="text" id="bot-name" placeholder="Nome do seu bot">
+                </div>
+                <div class="input-group">
+                    <label for="invite-link">Link de Convite:</label>
+                    <input type="url" id="invite-link" placeholder="Cole o link de convite do bot aqui">
+                </div>
+                <button type="button" onclick="addBot()">Adicionar Bot</button>
+            </form>
+        </section>
+
+        <section id="bot-list">
+            <h2>Bots Listados</h2>
+            <div class="bot-grid">
+                </div>
+            <p id="no-bots" style="display:none;">Nenhum bot foi adicionado ainda.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BotHub</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
